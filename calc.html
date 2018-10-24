@@ -1,54 +1,56 @@
-<!DOCTYPE thml>
+<!DOCTYPE html>
 
 <html>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF8">
-    <link rel="stylesheet" type="text/css" href="Style.css?<?php echo date('Ymd-Hi')" />
+    <link rel="stylesheet" type="text/css" href="Style.css?<?php echo date('Ymd-Hi')?>" />
     <title>calclator</title>
-</html>
 
 <body>
-    <br />
-    <br />
+    <form action='calc.php' method='post'>
+        <br />
+        <br />
 
-    <table>
-        <tr>
-        </tr>
-        <tr>
-            <input type="text" name="CalcWindow" style="height:70px; width:300px;">
-        </tr>
-        <tr>
-            <td><a href="./Style.css" class="btn">(</a></td>
-            <td><a href="./Style.css" class="btn">)</a></td>
-            <td><a href="./Style.css" class="btn">%</a></td>
-            <td><a href="./Style.css" class="btn">CE</a></td>
-        </tr>
-        <tr>
-            <td><a href="./Style.css" class="btn">7</a></td>
-            <td><a href="./Style.css" class="btn">8</a></td>
-            <td><a href="./Style.css" class="btn">9</a></td>
-            <td><a href="./Style.css" class="btn">÷</a></td>
-        </tr>
-        <tr>
-            <td><a href="./Style.css" class="btn">4</a></td>
-            <td><a href="./Style.css" class="btn">5</a></td>
-            <td><a href="./Style.css" class="btn">6</a></td>
-            <td><a href="./Style.css" class="btn">×</a></td>
-        </tr>
-        <tr>
-            <td><a href="./Style.css" class="btn">1</a></td>
-            <td><a href="./Style.css" class="btn">2</a></td>
-            <td><a href="./Style.css" class="btn">3</a></td>
-            <td><a href="./Style.css" class="btn">-</a></td>
-        </tr>
-        <tr>
-            <td><a href="./Style.css" class="btn">0</a></td>
-            <td><a href="./Style.css" class="btn">.</a></td>
-            <td><a href="./Style.css" class="btn">=</a></td>
-            <td><a href="./Style.css" class="btn">+</a></td>
-        </tr>
-                            
-    </table>
+        <table>
+            <tr>
+                <td colspan="4" style="text-align:right"><h3 style="color:#888888;">test</h3></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="text" name="CalcWindow" maxlength="10" style="height:70px; width:300px; font-size:50px; text-align:right"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="btn" name="btn" value="("></td>
+                <td><input type="submit" class="btn" name="btn" value=")"></td>
+                <td><input type="submit" class="btn" name="btn" value="%"></td>
+                <td><input type="submit" class="btn" name="btn" value="CE"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="btn" name="btn" value="7"></td>
+                <td><input type="submit" class="btn" name="btn" value="8"></td>
+                <td><input type="submit" class="btn" name="btn" value="9"></td>
+                <td><input type="submit" class="btn" name="btn" value="÷"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="btn" name="btn" value="4"></td>
+                <td><input type="submit" class="btn" name="btn" value="5"></td>
+                <td><input type="submit" class="btn" name="btn" value="6"></td>
+                <td><input type="submit" class="btn" name="btn" value="×"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="btn" name="btn" value="1"></td>
+                <td><input type="submit" class="btn" name="btn" value="2"></td>
+                <td><input type="submit" class="btn" name="btn" value="3"></td>
+                <td><input type="submit" class="btn" name="btn" value="-"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="btn" name="btn" value="0"></td>
+                <td><input type="submit" class="btn" name="btn" value="."></td>
+                <td><input type="submit" class="btn" name="btn" value="="></td>
+                <td><input type="submit" class="btn" name="btn" value="+"></td>
+            </tr>
+                                
+        </table>
+    </form>
 </body>
 
-
+</html>
 

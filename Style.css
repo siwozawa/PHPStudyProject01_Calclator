@@ -1,4 +1,4 @@
-.btn{
+ .btn{
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -11,18 +11,65 @@
     vertical-align: middle;
     overflow: hidden;
     font-weight: bold;
-    background-image: -webkit-linear-gradient(#bee4b3 0%, #94c99d 100%);
-    background-image: linear-gradient(#a3c29a 0%, #94c99d 100%);
+    background-image: -webkit-linear-gradient(#d6fee2 0%, #aaffb1 100%);
+    background-image: linear-gradient(#d6fee2 0%, #aaffb1 100%);
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
 }
 
-.btnactive{/*押したとき*/
+.btn:active{/*押したとき
     -ms-transform: translateY(2px);
     -webkit-transform: translateY(2px);
     transform: translateY(2px);/*沈むように*/
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-    background-image: -webkit-linear-gradient(#bee4b3 0%, #94c99d 100%);
-    background-image: linear-gradient(#a3c29a 0%, #94c99d 100%);/*グラデーションを明るく*/
+    background-image: -webkit-linear-gradient(#618b6e 0%, #48974e 100%);
+    background-image: linear-gradient(#618b6e 0%, #48974e 100%);/*グラデーションを明るく*/
 }
 
+.square_btn{
+    display: inline-block;
+    position: relative;
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
+    border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
+}
+
+.square_btn:before{    
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-width: 0 6px 6px 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #FFF;
+}
+
+.square_btn:after{   
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-width: 0px 6px 6px 0px;
+    border-style: solid;
+    border-color: #FFF;
+    border-bottom-color: transparent;
+}
+
+.square_btn:active{ /*ボタンを押したとき*/
+    border:none;
+    -ms-transform: translate(6px,6px);
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+
+.square_btn:active:after,.square_btn:active:before {
+    content: none;/*ボタンを押すと線が消える*/
+}
